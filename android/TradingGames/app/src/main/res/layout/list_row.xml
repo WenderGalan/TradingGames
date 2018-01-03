@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listRowIdLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:padding="8dp">
+
+    <!-- Thumbnail Image -->
+    <ImageView
+        android:id="@+id/imageViewList"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Anuncio Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageViewList"
+        android:layout_toEndOf="@+id/imageViewList"
+        android:layout_toRightOf="@+id/imageViewList"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <!-- Descricao Curta -->
+    <TextView
+        android:id="@+id/descricaoCurta"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/preco"
+        android:layout_below="@+id/title"
+        android:layout_toEndOf="@+id/imageViewList"
+        android:layout_toRightOf="@+id/imageViewList"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:textSize="13dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Preco -->
+    <TextView
+        android:id="@+id/preco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:textSize="@dimen/preco"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewList"
+        android:layout_toEndOf="@+id/imageViewList"
+        android:layout_toRightOf="@+id/imageViewList"
+        android:paddingLeft="10px"
+        android:text="@string/sifrao"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+
+</RelativeLayout>

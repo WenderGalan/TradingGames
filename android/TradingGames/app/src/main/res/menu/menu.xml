@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_configuracoes"
+        android:title="@string/item_configuracoes"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_person"/>
+
+    <item
+        android:id="@+id/item_sair"
+        android:title="@string/item_sair"
+        android:orderInCategory="200"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_anuncios"
+        android:title="@string/item_anuncios"
+        android:orderInCategory="300"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item_meus_anuncios"
+        android:title="@string/item_meus_anuncios"
+        android:orderInCategory="400"
+        app:showAsAction="never"/>
+
+</menu>

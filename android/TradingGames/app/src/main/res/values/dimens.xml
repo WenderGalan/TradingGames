@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_registration">20dp</dimen>
+    <dimen name="inputText">20dp</dimen>
+    <dimen name="inputText2">30dp</dimen>
+    <dimen name="tituloList">20dp</dimen>
+    <dimen name="preco">20dp</dimen>
+    <dimen name="descricaoCurta">18dp</dimen>
+    <dimen name="preco_detail">30dp</dimen>
+    <dimen name="textCategorias">18dp</dimen>
+    <dimen name="textAutor">20dp</dimen>
+
+</resources>

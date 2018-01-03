@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_principal">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="102dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/textEmail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="@dimen/inputText" />
+
+    <EditText
+        android:id="@+id/editTextSenha"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editTextEmail"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/textSenha"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="@dimen/inputText" />
+
+    <Button
+        android:id="@+id/buttonCriarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonEntrar"
+        android:layout_alignLeft="@+id/buttonEntrar"
+        android:layout_alignRight="@+id/buttonEntrar"
+        android:layout_alignStart="@+id/buttonEntrar"
+        android:layout_below="@+id/buttonEntrar"
+        android:layout_marginTop="12dp"
+        android:background="@color/buttonPrincipal"
+        android:elevation="0dp"
+        android:text="@string/textCriarConta"
+        android:textAllCaps="false"
+        android:textSize="@dimen/inputText" />
+
+    <Button
+        android:id="@+id/buttonEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/buttonPrincipal"
+        android:elevation="0dp"
+        android:text="@string/textEntrar"
+        android:textAllCaps="false"
+        android:textSize="@dimen/inputText"
+        android:layout_below="@+id/editTextSenha"
+        android:layout_alignLeft="@+id/editTextSenha"
+        android:layout_alignStart="@+id/editTextSenha"
+        android:layout_alignRight="@+id/editTextSenha"
+        android:layout_alignEnd="@+id/editTextSenha" />
+
+    <Button
+        android:id="@+id/buttonEsqueceuSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="@string/textEsqueceuASenha"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:layout_below="@+id/buttonCriarConta"
+        android:layout_alignRight="@+id/buttonCriarConta"
+        android:layout_alignEnd="@+id/buttonCriarConta" />
+
+</RelativeLayout>

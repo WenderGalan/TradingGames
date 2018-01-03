@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Trading Games</string>
+    <string name="textEmail">Email</string>
+    <string name="textSenha">Senha</string>
+    <string name="textEntrar">Entrar</string>
+    <string name="textMantenhaMeConectado">Mantenha-me conectado</string>
+    <string name="textCriarConta">Criar Conta</string>
+    <string name="textEsqueceuASenha">Esqueceu a senha?</string>
+    <string name="textNome">Nome</string>
+    <string name="textSobrenome">Sobrenome</string>
+    <string name="textRepetirSenha">Repita a senha</string>
+    <string name="textInformacao">Só vai levar alguns minutos</string>
+    <string name="textInformacao2">Ao salvar, eu concordo com os Termos e Condição da Trading Games.</string>
+    <string name="forgotPassword">Esqueceu a senha?</string>
+    <string name="textInformacao3">Por favor digite seu e-mail e certifique-se de estar cadastrado!</string>
+    <string name="textEnviarEmail">Enviar E-mail</string>
+    <string name="textDigiteOCodigo">Código</string>
+    <string name="textInformacao4">Por favor digite o código:</string>
+    <string name="textEnviarCodigo">Validar Código</string>
+    <string name="textSuaSenha">Sua senha é:</string>
+    <string name="sifrao">R$</string>
+    <string name="item_configuracoes">Meu usuario</string>
+    <string name="item_sair">Sair</string>
+    <string name="item_anuncios">Anuncios</string>
+    <string name="item_meus_anuncios">Meus anuncios</string>
+    <string name="texto_novo_anuncio">Escolha no máximo seis fotos. As fotos também deverão ter um tamanho de no máximo 16 mb</string>
+    <string name="titulo">Título</string>
+    <string name="descricao_produto">Descrição</string>
+    <string name="preco_produto">Preço</string>
+    <string name="novo_anuncio_categoria">Categoria</string>
+    <string name="numero_contato">Número para contato</string>
+    <string name="novo_anuncio_tags">Insira as suas Tags</string>
+    <string name="bt_salvar">Salvar alterações</string>
+</resources>

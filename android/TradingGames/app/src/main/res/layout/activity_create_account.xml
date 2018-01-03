@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_principal"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/textNome"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="@dimen/inputText"
+        android:layout_below="@+id/textViewInformacao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+
+    <EditText
+        android:id="@+id/editTextSobrenome"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/textSobrenome"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="@dimen/inputText"
+        android:layout_below="@+id/editTextNome"
+        android:layout_alignLeft="@+id/editTextNome"
+        android:layout_alignStart="@+id/editTextNome" />
+
+    <EditText
+        android:id="@+id/editTextEmailCadastre"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/textEmail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="@dimen/inputText"
+        android:layout_below="@+id/editTextSobrenome"
+        android:layout_alignLeft="@+id/editTextSobrenome"
+        android:layout_alignStart="@+id/editTextSobrenome" />
+
+    <EditText
+        android:id="@+id/editTextSenhaCadastre"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/textSenha"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="@dimen/inputText"
+        android:layout_below="@+id/editTextEmailCadastre"
+        android:layout_alignLeft="@+id/editTextEmailCadastre"
+        android:layout_alignStart="@+id/editTextEmailCadastre" />
+
+    <EditText
+        android:id="@+id/editTextRepetirSenhaCadastre"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editTextSenhaCadastre"
+        android:layout_alignStart="@+id/editTextSenhaCadastre"
+        android:layout_below="@+id/editTextSenhaCadastre"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/textRepetirSenha"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="@dimen/inputText" />
+
+    <TextView
+        android:id="@+id/textViewCadastre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="19dp"
+        android:text="Cadastre-se"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textViewInformacao"
+        android:layout_alignStart="@+id/textViewInformacao" />
+
+    <TextView
+        android:id="@+id/textViewInformacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textInformacao"
+        android:textSize="18dp"
+        android:layout_below="@+id/textViewCadastre"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewInformacao2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/textInformacao2"
+        android:textAlignment="center"
+        android:layout_below="@+id/editTextRepetirSenhaCadastre"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonCriarContaCadastre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextRepetirSenhaCadastre"
+        android:layout_alignLeft="@+id/editTextRepetirSenhaCadastre"
+        android:layout_alignRight="@+id/editTextRepetirSenhaCadastre"
+        android:layout_alignStart="@+id/editTextRepetirSenhaCadastre"
+        android:layout_below="@+id/textViewInformacao2"
+        android:layout_marginTop="17dp"
+        android:background="@color/buttonPrincipal"
+        android:text="@string/textCriarConta"
+        android:textAllCaps="false"
+        android:textSize="@dimen/inputText" />
+
+</RelativeLayout>

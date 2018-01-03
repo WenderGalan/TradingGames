@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tradinggames.com.tradinggames.activities.UserActivity"
+    android:background="@color/background_principal">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1500dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:text="Altere as informações da sua conta por aqui"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edit_nome"
+                android:layout_width="370dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView6"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="18dp"
+                android:background="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Seu novo nome"
+                android:inputType="textPersonName"
+                android:textColorHint="@android:color/black" />
+
+            <EditText
+                android:id="@+id/edit_ultimo_nome"
+                android:layout_width="370dp"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/edit_nome"
+                android:layout_alignStart="@+id/edit_nome"
+                android:layout_below="@+id/edit_nome"
+                android:layout_marginTop="18dp"
+                android:background="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Novo ultimo nome"
+                android:inputType="textPersonName"
+                android:textColorHint="@android:color/black" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="370dp"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/edit_ultimo_nome"
+                android:layout_alignStart="@+id/edit_ultimo_nome"
+                android:layout_below="@+id/edit_ultimo_nome"
+                android:layout_marginTop="22dp"
+                android:background="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Seu novo email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@android:color/black" />
+
+            <EditText
+                android:id="@+id/edit_senha"
+                android:layout_width="370dp"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/edit_email"
+                android:layout_alignStart="@+id/edit_email"
+                android:layout_below="@+id/edit_email"
+                android:layout_marginTop="17dp"
+                android:background="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Sua nova senha"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@android:color/black" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_senha"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="96dp"
+                android:background="@color/buttonPrincipal"
+                android:text="@string/bt_salvar" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
